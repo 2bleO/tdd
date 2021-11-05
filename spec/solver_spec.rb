@@ -22,7 +22,15 @@ describe Solver do
           expect { @solver.factorial(-5) }.to raise_error('Enter a Positive Number')
         end
       end
-
     end
+
+    describe '#reverse' do
+      context "when a string is provided" do
+        it 'should return it reversed' do
+          expect(@solver.reverse('word')).to eql ('drow')
+        end
+      end
+    end
+
   end
 end
