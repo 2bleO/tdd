@@ -32,5 +32,13 @@ describe Solver do
       end
     end
 
+    describe '#fizzbuzz' do
+      context "takes an integer (N)" do
+        it 'should return "fizz" when N is divisible by 3' do
+          expect(@solver.fizzbuzz(6)).to eql 'fizz'
+        end
+      end
+    end
+
   end
 end
