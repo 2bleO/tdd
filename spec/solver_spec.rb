@@ -41,6 +41,10 @@ describe Solver do
         it 'should return "buzz" when N is divisible by 5' do
           expect(@solver.fizzbuzz(10)).to eql 'buzz'
         end
+
+        it 'should return "fizzbuzz" when N is divisible by 3 && by 5' do
+          expect(@solver.fizzbuzz(15)).to eql 'fizzbuzz'
+        end
       end
     end
 
