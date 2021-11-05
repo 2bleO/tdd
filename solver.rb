@@ -3,4 +3,8 @@ class Solver
     raise StandardError.new 'Enter a Positive Number' if num.negative?
     (1..num).reduce(:*) || 1
   end
+
+  def reverse(string)
+    string.reverse
+  end
 end
